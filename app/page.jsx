@@ -13,19 +13,19 @@ export default function MainPage() {
           href="/download"
           className=" bg-white hover:bg-orange-600 hover:text-white hover:scale-105 transition duration-300 text-black flex justify-center items-center rounded-xl shadow-lg"
         >
-          <div className="text-xl font-semibold">다운로드</div>
+          <div className="text-xl font-semibold">📱다운로드</div>
         </Link>
         <Link
           href="https://forms.gle/VY4MvK6tLBKgucfNA"
           className=" bg-white hover:bg-orange-600 hover:text-white hover:scale-105 transition duration-300 text-black flex justify-center items-center rounded-xl shadow-lg"
         >
-          <div className="text-xl font-semibold">앱 기능 제안하기</div>
+          <div className="text-xl font-semibold">🛠️앱 기능 제안하기</div>
         </Link>
         <Link
           href="https://moveto.kr"
           className=" bg-white hover:bg-orange-600 hover:text-white hover:scale-105 transition duration-300 text-black flex justify-center items-center rounded-xl shadow-lg"
         >
-          <div className="text-xl font-semibold">Team Moveto</div>
+          <div className="text-xl font-semibold">🏢Team Moveto</div>
         </Link>
         <Link
           href="https://toss.me/hyunwo/3000"
@@ -33,6 +33,11 @@ export default function MainPage() {
         >
           <div className="text-xl font-semibold">☕개발자 커피 사주기</div>
         </Link>
+      </div>
+      <div className="bg-orange-50/50 text-center p-4 py-8">
+        <div className="text-slate-500">
+          Copyright 2022. Team Moveto. All rights reserved.
+        </div>
       </div>
     </div>
   );

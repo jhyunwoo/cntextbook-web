@@ -5,7 +5,7 @@ import Appstore from "../../public/appstore-badge.svg";
 
 export default function Download() {
   return (
-    <div className="">
+    <div className="bg-orange-50/50">
       <div className="w-full py-24 bg-orange-400 flex justify-center items-center">
         <div className="text-white text-3xl font-semibold">앱 다운로드</div>
       </div>
@@ -28,6 +28,11 @@ export default function Download() {
         >
           <div className="font-semibold text-xl">Home Page</div>
         </Link>
+      </div>
+      <div className="bg-orange-50/50 text-center p-4 py-8">
+        <div className="text-slate-500">
+          Copyright 2022. Team Moveto. All rights reserved.
+        </div>
       </div>
     </div>
   );
