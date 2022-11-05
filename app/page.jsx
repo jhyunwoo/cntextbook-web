@@ -1,57 +1,39 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Link from "next/link";
 
-export default function Home() {
+export default function MainPage() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-        </h1>
+    <div className="h-screen">
+      <div className="w-full h-screen bg-orange-400 flex justify-center items-center flex-col">
+        <div className="text-5xl text-white mx-4 font-bold ">CN교과서</div>
+        <div className="text-xl text-white m-2">Team Moveto</div>
+      </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="bg-orange-50/50 h-1/2 w-full grid grid-cols-2 gap-4 p-4 md:p-6 md:gap-6 lg:p-8 lg:gap-8 lg:grid-cols-4">
+        <Link
+          href="/download"
+          className=" bg-white hover:bg-orange-600 hover:text-white hover:scale-105 transition duration-300 text-black flex justify-center items-center rounded-xl shadow-lg"
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+          <div className="text-xl font-semibold">다운로드</div>
+        </Link>
+        <Link
+          href="https://forms.gle/VY4MvK6tLBKgucfNA"
+          className=" bg-white hover:bg-orange-600 hover:text-white hover:scale-105 transition duration-300 text-black flex justify-center items-center rounded-xl shadow-lg"
+        >
+          <div className="text-xl font-semibold">앱 기능 제안하기</div>
+        </Link>
+        <Link
+          href="https://moveto.kr"
+          className=" bg-white hover:bg-orange-600 hover:text-white hover:scale-105 transition duration-300 text-black flex justify-center items-center rounded-xl shadow-lg"
+        >
+          <div className="text-xl font-semibold">Team Moveto</div>
+        </Link>
+        <Link
+          href="https://toss.me/hyunwo/3000"
+          className=" bg-white hover:bg-orange-600 hover:text-white hover:scale-105 transition duration-300 text-black flex justify-center items-center rounded-xl shadow-lg"
+        >
+          <div className="text-xl font-semibold">☕개발자 커피 사주기</div>
+        </Link>
+      </div>
     </div>
-  )
+  );
 }
