@@ -28,10 +28,10 @@ export default function MainPage() {
           <div className="text-xl font-semibold">🏢Team Moveto</div>
         </Link>
         <Link
-          href="https://toss.me/moveto/2000"
+          href="https://toss.me/moveto"
           className=" bg-white hover:bg-orange-600 hover:text-white hover:scale-105 transition duration-300 text-black flex justify-center items-center rounded-xl shadow-lg"
         >
-          <div className="text-xl font-semibold">☕개발자 커피 사주기</div>
+          <div className="text-xl font-semibold">🎖️후원</div>
         </Link>
       </div>
       <div className="bg-orange-50/50 text-center p-4 py-8">
